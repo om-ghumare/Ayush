@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="/views/stlye-transfer.css">
+</head>
+<body>
+    <div class="biggest-container">
+        
+        <nav class="navbar-container">
+            
+                
+                <div class="navbar">
+                    <div class="main-logo"><svg xmlns="http://www.w3.org/2000/svg" class="logo-icon" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                  </svg></div>
+                  <h1 class="main-header">Netizen Bank</h1>
+                  <ul class="navbarTBA">
+                      <li><a class="page-btn"  href="/">Home</a></li>
+                      <li><a class="page-btn" href="/accounts">Accounts</a></li>
+                      <li><a class="page-btn" href="/transfer">Transfer</a></li>
+                      <li><svg xmlns="http://www.w3.org/2000/svg" class="more-icon" fill="none" viewBox="0 0 24 24"                  stroke="currentColor" stroke-width="2">
+                          <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                        </svg>
+                        </li>
+                    </ul>
+                </div>
+            
+        </nav>
+        <section class="transfer-biggest-box">
+            <div class="hero-img-box">
+                <img class="hero-img" src="/Images/Transfer-hero-img.jpg" alt="Background-Money">
+            </div>
+            <div class="hero-text-box">
+                <h2 class="hero-header">Transfer Now!</h2>
+                <p class="support-text top-margin-30px">Enter the details for the transaction.</p>
+                <p class="sendmoney top-margin-30px">Send Money</p>
+                <form method="post"  >
+                    <p class="form-text">Send Money from:</p>  
+                    <input type="text" placeholder="Enter sender's name" name="sender">
+                    <p class="form-text">Send Money to:</p>  
+                    <input type="text" placeholder="Enter receiver's name" name="receiver">
+                    <p class="form-text">Amount:</p>  
+                    <input class="make-block" placeholder="Enter amount" type="text" name="amount">
+                    <input class="transfer-btn top-margin-50px" type="submit" value="Transfer">
+                </form>
+
+                <!-- <div class="top-margin-50px">
+                    <a class="transfer-btn" href="/transfer.html">Transfer</a>
+                </div> -->
+                
+            </div>
+        </section>
+        
+        <footer class="footer">
+            <div class="footer-text-box">Created by Ayush Nikhade for TSF-Intern as Task #1</div>
+
+        </footer>
+    </div>
+    <script src="../index.js"></script>
+</body>
+</html>

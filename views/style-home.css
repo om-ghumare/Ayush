@@ -1,0 +1,301 @@
+/* colours **************************************************************************************/
+/* shades and tints :#e6edf3   #084884  #021628 */
+/* grays: #333 */
+
+/* fonts **************************************************************************************/
+/* MainHeader:3.6rem */
+
+/* spacing **************************************************************************************/
+/* MainHeader:3.6rem */
+
+/* TBR */
+/* 
+C:\Program Files\MongoDB\Server\5.0\data\
+    photo at the detailed person thing
+    mongodb+srv://09Random:<password>@cluster0.ds5ne.mongodb.net/?retryWrites=true&w=majority
+    make another collection to  store transfers and store frow , to and amount and then use queries to find them from the created database and then use it to display in the recent transfers setion
+
+    make the nav links work
+*/
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  HOME  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.top-margin-30px{
+    margin-top: 3rem;
+}
+.top-margin-50px{
+    margin-top: 5rem;
+}
+a{
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    
+}
+body {
+    background-color:#e6edf3 ;
+    height: 100%;
+    width: 100%;
+}
+.main-logo{
+    height: 6.5rem;
+    width: 6.5rem;
+    color: #084884;
+}
+.hero-img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.biggest-container{
+    /* display: grid; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR**********************************************/
+
+.navbar{
+    padding: 1.2rem, 5.6rem;
+    display: flex;
+    background-color: #cedae6;
+}
+
+.logo-icon{
+    height: 5.4rem;
+    width: 5.4rem;
+    margin: auto auto;
+
+}
+.main-logo{
+    margin: 1.2rem 0.8rem 1.2rem 8.4rem;
+}
+.main-header{
+    margin: auto 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.6rem;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.navbar ul{
+    display: flex;
+    margin:auto 8.4rem auto auto;
+    gap: 3.6rem;
+}
+.more-icon{
+    display: none;
+    height: 3.6rem;
+    width: 3.6rem;
+}
+
+@media only screen and (max-width: 850px){
+    .navbar ul li a{
+        display: none;
+    }
+    .more-icon{
+        display: inline-block;
+    }
+    .overlay-open{
+        position: absolute;
+        top:0px;
+        left: 0;
+        background-color: #cedae6ea;
+        height: 100%;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+    
+        
+    }
+    .overlay-open .page-btn{
+        display: block;
+    }
+}
+@media only screen and (max-width: 607px){
+    .main-logo{
+        margin: 1.2rem 2.4rem;
+    }
+}
+@media only screen and (max-width: 375px){
+    .navbar ul{
+        height: 3.6rem;
+        width: 10px;
+        gap: 0px;
+    }
+    .navbar ul:last-child{
+        height: 3.6rem;
+        width: 3.6rem;
+        margin: auto auto;
+    }
+}
+
+
+.navbar ul li{
+    
+    list-style: none;
+    
+}
+
+.page-btn:link,.page-btn:visited{
+    
+    transition: all 0.2s;
+    border: 2px solid #021628;
+    /* border-radius: 1000px; */
+    padding: 0.5rem;
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: #021628;
+
+}
+
+.page-btn:hover,.page-btn:active{
+    
+    border: 2px solid #021628;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #e6edf3;
+    background-color: #021628;
+
+}
+
+
+/* HERO************************************************************* */
+
+.hero-container{
+    
+    margin: 0 5.4rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 1fr;
+    
+    
+}
+
+.hero-img-box{
+    /* padding: 0rem 3.6rem; */
+    grid-column:1/-1;
+    grid-row: 1/-1;
+}
+.hero-text-box{
+    padding: 3.6rem 2.4rem;
+    /* border-radius: 1.3rem; */
+    box-shadow: 0px 0px 1.6rem #222 ;
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+    background-color: #e6edf3;
+    margin: auto 3.6rem;
+    /* margin-right: 7.2rem; */
+    color: #333;
+}
+@media only screen and (max-width: 1058px) {
+    .hero-text-box{
+        box-shadow: none;
+    }
+}
+@media only screen and (max-width: 850px) {
+    .hero-container{
+        grid-template-columns: repeat(1,fr);
+        grid-template-rows: repeat(2,fr);
+    }
+    .hero-img-box{
+        grid-row: 2/-1;
+    }
+    .hero-text-box{
+        grid-row: 1/2;
+        grid-column: 1/-1;
+        box-shadow: none;
+        margin: 0 0;
+    }
+}
+
+.hero-header{
+    font-size: 6.4rem;
+    
+}
+.bank-description{
+    font-size: 2.4rem;
+}
+.transfer-btn{
+    margin: 2.4rem 0;
+    padding: 1.2rem;
+    background-color: #021628;
+}
+.transfer-btn:visited,.transfer-btn:link{
+    color: #e6edf3;
+    font-size: 2.4rem;
+    border:3px solid #021628;
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    transition: all 0.2s;
+}
+.transfer-btn:hover,.transfer-btn:active{
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    color: #021628;
+    border:3px solid #021628;
+    background-color: #e6edf3;
+}
+@media only screen and (max-width: 350px){
+    .hero-header{
+        font-size: 4.8rem;
+        
+    }
+    .bank-description{
+        font-size: 1.2rem;
+    }
+    .transfer-btn{
+        
+        font-size: 1.2rem;
+        margin: 1.2rem 0;
+        padding: 0.6rem;
+        background-color: #021628;
+    }
+    .transfer-btn:visited,.transfer-btn:link{
+        
+        font-size: 1.2rem;
+        margin: 1.2rem 0;
+        padding: 0.6rem;
+        background-color: #021628;
+    }
+    .transfer-btn:active,.transfer-btn:hover{
+        
+        font-size: 1.2rem;
+        margin: 1.2rem 0;
+        padding: 0.6rem;
+        background-color: #e6edf3;
+    }
+}
+
+/* FOOTER ****************************************************************** */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #021628 ;
+    color: #e6edf3;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    margin-top: auto;
+}
+

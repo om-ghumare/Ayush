@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bankar</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    
+        <link rel="stylesheet" href="/views/style-accounts.css">
+</head>
+<body>
+    <div class="biggest-container">
+
+        <!-- normal navbar  -->
+        <nav class="navbar-container">
+            <div class="navbar">
+                <div class="main-logo"><svg xmlns="http://www.w3.org/2000/svg" class="logo-icon" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M4 4a2 2 0 00-2 2v4a2 2 0 002 2V6h10a2 2 0 00-2-2H4zm2 6a2 2 0 012-2h8a2 2 0 012 2v4a2 2 0 01-2 2H8a2 2 0 01-2-2v-4zm6 4a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+                  </svg></div>
+                <h1 class="main-header">Netizen Bank</h1>
+                <ul class="navbarTBA">
+                    <li><a class="page-btn"  href="/">Home</a></li>
+                    <li><a class="page-btn" href="/accounts">Accounts</a></li>
+                    <li><a class="page-btn" href="/transfer">Transfer</a></li>
+                    <li><svg xmlns="http://www.w3.org/2000/svg" class="more-icon" fill="none" viewBox="0 0 24 24"                  stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z" />
+                      </svg>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        
+        <section class="table-box">
+            <div class="list-box">
+
+                                
+                                <ul class="one-bar-container">
+                                    <li class="person-1 person">
+                                        <img class="person-img" src="Images/gill bates.jpg" alt="human face"> 
+                                        <p class="name"><%=userList[0].name %></p> 
+                                        <p class="amount"><%=userList[0].balance %></p>
+                                        <p class="email"><%=userList[0].email %></p>
+                                        <p class="acid"><%=userList[0].acid %></p>
+                                        <p class="hide hiddentable-sender-1"><%=userList[0].recentTransfers[0].sender%></p>
+                                        <p class="hide hiddentable-sender-2"><%=userList[0].recentTransfers[1].sender%></p>
+                                        <p class="hide hiddentable-sender-3"><%=userList[0].recentTransfers[2].sender%></p>
+                                        <p class="hide hiddentable-sender-4"><%=userList[0].recentTransfers[3].sender%></p>
+                                        <p class="hide hiddentable-sender-5"><%=userList[0].recentTransfers[4].sender%></p>
+                                        <p class="hide hiddentable-receiver-1"><%=userList[0].recentTransfers[0].receiver%></p>
+                                        <p class="hide hiddentable-receiver-2"><%=userList[0].recentTransfers[1].receiver%></p>
+                                        <p class="hide hiddentable-receiver-3"><%=userList[0].recentTransfers[2].receiver%></p>
+                                        <p class="hide hiddentable-receiver-4"><%=userList[0].recentTransfers[3].receiver%></p>
+                                        <p class="hide hiddentable-receiver-5"><%=userList[0].recentTransfers[4].receiver%></p>
+                                        <p class="hide hiddentable-amount-1"><%=userList[0].recentTransfers[0].amount%></p>
+                                        <p class="hide hiddentable-amount-2"><%=userList[0].recentTransfers[1].amount%></p>
+                                        <p class="hide hiddentable-amount-3"><%=userList[0].recentTransfers[2].amount%></p>
+                                        <p class="hide hiddentable-amount-4"><%=userList[0].recentTransfers[3].amount%></p>
+                                        <p class="hide hiddentable-amount-5"><%=userList[0].recentTransfers[4].amount%></p>
+                                    </li>
+                                    <li class="person-2 person">
+                                        <img class="person-img" src="Images/rowanatkinson.jpg" alt="human face"> 
+                                        <p class="name"><%=userList[1].name %></p> 
+                                        <p class="amount"><%=userList[1].balance %></p>
+                                        <p class="email"><%=userList[1].email %></p>
+                                        <p class="acid"><%=userList[1].acid %></p>
+                                        <p class="hide hiddentable-sender-1"><%=userList[1].recentTransfers[0].sender%></p>
+                                        <p class="hide hiddentable-sender-2"><%=userList[1].recentTransfers[1].sender%></p>
+                                        <p class="hide hiddentable-sender-3"><%=userList[1].recentTransfers[2].sender%></p>
+                                        <p class="hide hiddentable-sender-4"><%=userList[1].recentTransfers[3].sender%></p>
+                                        <p class="hide hiddentable-sender-5"><%=userList[1].recentTransfers[4].sender%></p>
+                                        <p class="hide hiddentable-receiver-1"><%=userList[1].recentTransfers[0].receiver%></p>
+                                        <p class="hide hiddentable-receiver-2"><%=userList[1].recentTransfers[1].receiver%></p>
+                                        <p class="hide hiddentable-receiver-3"><%=userList[1].recentTransfers[2].receiver%></p>
+                                        <p class="hide hiddentable-receiver-4"><%=userList[1].recentTransfers[3].receiver%></p>
+                                        <p class="hide hiddentable-receiver-5"><%=userList[1].recentTransfers[4].receiver%></p>
+                                        <p class="hide hiddentable-amount-1"><%=userList[1].recentTransfers[0].amount%></p>
+                                        <p class="hide hiddentable-amount-2"><%=userList[1].recentTransfers[1].amount%></p>
+                                        <p class="hide hiddentable-amount-3"><%=userList[1].recentTransfers[2].amount%></p>
+                                        <p class="hide hiddentable-amount-4"><%=userList[1].recentTransfers[3].amount%></p>
+                                        <p class="hide hiddentable-amount-5"><%=userList[1].recentTransfers[4].amount%></p>
+                                    </li>
+                                    <li class="person-3 person">
+                                        <img class="person-img" src="Images/elonmusk.jpg" alt="human face"> 
+                                        <p class="name"><%=userList[2].name %></p> 
+                                        <p class="amount"><%=userList[2].balance %></p>
+                                        <p class="email"><%=userList[2].email %></p>
+                                        <p class="acid"><%=userList[2].acid %></p>
+                                        <p class="hide hiddentable-sender-1"><%=userList[2].recentTransfers[0].sender%></p>
+                                        <p class="hide hiddentable-sender-2"><%=userList[2].recentTransfers[1].sender%></p>
+                                        <p class="hide hiddentable-sender-3"><%=userList[2].recentTransfers[2].sender%></p>
+                                        <p class="hide hiddentable-sender-4"><%=userList[2].recentTransfers[3].sender%></p>
+                                        <p class="hide hiddentable-sender-5"><%=userList[2].recentTransfers[4].sender%></p>
+                                        <p class="hide hiddentable-receiver-1"><%=userList[2].recentTransfers[0].receiver%></p>
+                                        <p class="hide hiddentable-receiver-2"><%=userList[2].recentTransfers[1].receiver%></p>
+                                        <p class="hide hiddentable-receiver-3"><%=userList[2].recentTransfers[2].receiver%></p>
+                                        <p class="hide hiddentable-receiver-4"><%=userList[2].recentTransfers[3].receiver%></p>
+                                        <p class="hide hiddentable-receiver-5"><%=userList[2].recentTransfers[4].receiver%></p>
+                                        <p class="hide hiddentable-amount-1"><%=userList[2].recentTransfers[0].amount%></p>
+                                        <p class="hide hiddentable-amount-2"><%=userList[2].recentTransfers[1].amount%></p>
+                                        <p class="hide hiddentable-amount-3"><%=userList[2].recentTransfers[2].amount%></p>
+                                        <p class="hide hiddentable-amount-4"><%=userList[2].recentTransfers[3].amount%></p>
+                                        <p class="hide hiddentable-amount-5"><%=userList[2].recentTransfers[4].amount%></p>
+                                    </li>
+                                    <li class="person-4 person selected-person">
+                                        <img class="person-img" src="Images/billnye.jpg" alt="human face"> 
+                                        <p class="name"><%=userList[3].name %></p> 
+                                        <p class="amount"><%=userList[3].balance %></p>
+                                        <p class="email"><%=userList[3].email %></p>
+                                        <p class="acid"><%=userList[3].acid %></p>
+                                        <p class="hide hiddentable-sender-1"><%=userList[3].recentTransfers[0].sender%></p>
+                                        <p class="hide hiddentable-sender-2"><%=userList[3].recentTransfers[1].sender%></p>
+                                        <p class="hide hiddentable-sender-3"><%=userList[3].recentTransfers[2].sender%></p>
+                                        <p class="hide hiddentable-sender-4"><%=userList[3].recentTransfers[3].sender%></p>
+                                        <p class="hide hiddentable-sender-5"><%=userList[3].recentTransfers[4].sender%></p>
+                                        <p class="hide hiddentable-receiver-1"><%=userList[3].recentTransfers[0].receiver%></p>
+                                        <p class="hide hiddentable-receiver-2"><%=userList[3].recentTransfers[1].receiver%></p>
+                                        <p class="hide hiddentable-receiver-3"><%=userList[3].recentTransfers[2].receiver%></p>
+                                        <p class="hide hiddentable-receiver-4"><%=userList[3].recentTransfers[3].receiver%></p>
+                                        <p class="hide hiddentable-receiver-5"><%=userList[3].recentTransfers[4].receiver%></p>
+                                        <p class="hide hiddentable-amount-1"><%=userList[3].recentTransfers[0].amount%></p>
+                                        <p class="hide hiddentable-amount-2"><%=userList[3].recentTransfers[1].amount%></p>
+                                        <p class="hide hiddentable-amount-3"><%=userList[3].recentTransfers[2].amount%></p>
+                                        <p class="hide hiddentable-amount-4"><%=userList[3].recentTransfers[3].amount%></p>
+                                        <p class="hide hiddentable-amount-5"><%=userList[3].recentTransfers[4].amount%></p>
+                                    </li>
+                                    <li class="person-5 person">
+                                        <img class="person-img" src="Images/rick.jpg" alt="human face"> 
+                                        <p class="name"><%=userList[4].name %></p> 
+                                        <p class="amount"><%=userList[4].balance %></p>
+                                        <p class="email"><%=userList[4].email %></p>
+                                        <p class="acid"><%=userList[4].acid %></p>
+                                        <p class="hide hiddentable-sender-1"><%=userList[4].recentTransfers[0].sender%></p>
+                                        <p class="hide hiddentable-sender-2"><%=userList[4].recentTransfers[1].sender%></p>
+                                        <p class="hide hiddentable-sender-3"><%=userList[4].recentTransfers[2].sender%></p>
+                                        <p class="hide hiddentable-sender-4"><%=userList[4].recentTransfers[3].sender%></p>
+                                        <p class="hide hiddentable-sender-5"><%=userList[4].recentTransfers[4].sender%></p>
+                                        <p class="hide hiddentable-receiver-1"><%=userList[4].recentTransfers[0].receiver%></p>
+                                        <p class="hide hiddentable-receiver-2"><%=userList[4].recentTransfers[1].receiver%></p>
+                                        <p class="hide hiddentable-receiver-3"><%=userList[4].recentTransfers[2].receiver%></p>
+                                        <p class="hide hiddentable-receiver-4"><%=userList[4].recentTransfers[3].receiver%></p>
+                                        <p class="hide hiddentable-receiver-5"><%=userList[4].recentTransfers[4].receiver%></p>
+                                        <p class="hide hiddentable-amount-1"><%=userList[4].recentTransfers[0].amount%></p>
+                                        <p class="hide hiddentable-amount-2"><%=userList[4].recentTransfers[1].amount%></p>
+                                        <p class="hide hiddentable-amount-3"><%=userList[4].recentTransfers[2].amount%></p>
+                                        <p class="hide hiddentable-amount-4"><%=userList[4].recentTransfers[3].amount%></p>
+                                        <p class="hide hiddentable-amount-5"><%=userList[4].recentTransfers[4].amount%></p>
+                                    </li>
+                                    <li class="person-6 person">
+                                        <img class="person-img" src="Images/robpat.jpg" alt="human face"> 
+                                        <p class="name"><%=userList[5].name %></p> 
+                                        <p class="amount"><%=userList[5].balance %></p>
+                                        <p class="email"><%=userList[5].email %></p>
+                                        <p class="acid"><%=userList[5].acid %></p>
+                                        <p class="hide hiddentable-sender-1"><%=userList[5].recentTransfers[0].sender%></p>
+                                        <p class="hide hiddentable-sender-2"><%=userList[5].recentTransfers[1].sender%></p>
+                                        <p class="hide hiddentable-sender-3"><%=userList[5].recentTransfers[2].sender%></p>
+                                        <p class="hide hiddentable-sender-4"><%=userList[5].recentTransfers[3].sender%></p>
+                                        <p class="hide hiddentable-sender-5"><%=userList[5].recentTransfers[4].sender%></p>
+                                        <p class="hide hiddentable-receiver-1"><%=userList[5].recentTransfers[0].receiver%></p>
+                                        <p class="hide hiddentable-receiver-2"><%=userList[5].recentTransfers[1].receiver%></p>
+                                        <p class="hide hiddentable-receiver-3"><%=userList[5].recentTransfers[2].receiver%></p>
+                                        <p class="hide hiddentable-receiver-4"><%=userList[5].recentTransfers[3].receiver%></p>
+                                        <p class="hide hiddentable-receiver-5"><%=userList[5].recentTransfers[4].receiver%></p>
+                                        <p class="hide hiddentable-amount-1"><%=userList[5].recentTransfers[0].amount%></p>
+                                        <p class="hide hiddentable-amount-2"><%=userList[5].recentTransfers[1].amount%></p>
+                                        <p class="hide hiddentable-amount-3"><%=userList[5].recentTransfers[2].amount%></p>
+                                        <p class="hide hiddentable-amount-4"><%=userList[5].recentTransfers[3].amount%></p>
+                                        <p class="hide hiddentable-amount-5"><%=userList[5].recentTransfers[4].amount%></p>
+                                    </li>
+                                    <li class="person-7 person">
+                                        <img class="person-img" src="Images/felix.jpg" alt="human face"> 
+                                        <p class="name"><%=userList[6].name %></p> 
+                                        <p class="amount"><%=userList[6].balance %></p>
+                                        <p class="email"><%=userList[6].email %></p>
+                                        <p class="acid"><%=userList[6].acid %></p>
+                                        <p class="hide hiddentable-sender-1"><%=userList[6].recentTransfers[0].sender%></p>
+                                        <p class="hide hiddentable-sender-2"><%=userList[6].recentTransfers[1].sender%></p>
+                                        <p class="hide hiddentable-sender-3"><%=userList[6].recentTransfers[2].sender%></p>
+                                        <p class="hide hiddentable-sender-4"><%=userList[6].recentTransfers[3].sender%></p>
+                                        <p class="hide hiddentable-sender-5"><%=userList[6].recentTransfers[4].sender%></p>
+                                        <p class="hide hiddentable-receiver-1"><%=userList[6].recentTransfers[0].receiver%></p>
+                                        <p class="hide hiddentable-receiver-2"><%=userList[6].recentTransfers[1].receiver%></p>
+                                        <p class="hide hiddentable-receiver-3"><%=userList[6].recentTransfers[2].receiver%></p>
+                                        <p class="hide hiddentable-receiver-4"><%=userList[6].recentTransfers[3].receiver%></p>
+                                        <p class="hide hiddentable-receiver-5"><%=userList[6].recentTransfers[4].receiver%></p>
+                                        <p class="hide hiddentable-amount-1"><%=userList[6].recentTransfers[0].amount%></p>
+                                        <p class="hide hiddentable-amount-2"><%=userList[6].recentTransfers[1].amount%></p>
+                                        <p class="hide hiddentable-amount-3"><%=userList[6].recentTransfers[2].amount%></p>
+                                        <p class="hide hiddentable-amount-4"><%=userList[6].recentTransfers[3].amount%></p>
+                                        <p class="hide hiddentable-amount-5"><%=userList[6].recentTransfers[4].amount%></p>
+                                    </li>
+                                    <li class="person-8 person">
+                                        <img class="person-img" src="Images/sean.jpg" alt="human face"> 
+                                        <p class="name"><%=userList[7].name %></p> 
+                                        <p class="amount"><%=userList[7].balance %></p>
+                                        <p class="email"><%=userList[7].email %></p>
+                                        <p class="acid"><%=userList[7].acid %></p>
+                                        <p class="hide hiddentable-sender-1"><%=userList[7].recentTransfers[0].sender%></p>
+                                        <p class="hide hiddentable-sender-2"><%=userList[7].recentTransfers[1].sender%></p>
+                                        <p class="hide hiddentable-sender-3"><%=userList[7].recentTransfers[2].sender%></p>
+                                        <p class="hide hiddentable-sender-4"><%=userList[7].recentTransfers[3].sender%></p>
+                                        <p class="hide hiddentable-sender-5"><%=userList[7].recentTransfers[4].sender%></p>
+                                        <p class="hide hiddentable-receiver-1"><%=userList[7].recentTransfers[0].receiver%></p>
+                                        <p class="hide hiddentable-receiver-2"><%=userList[7].recentTransfers[1].receiver%></p>
+                                        <p class="hide hiddentable-receiver-3"><%=userList[7].recentTransfers[2].receiver%></p>
+                                        <p class="hide hiddentable-receiver-4"><%=userList[7].recentTransfers[3].receiver%></p>
+                                        <p class="hide hiddentable-receiver-5"><%=userList[7].recentTransfers[4].receiver%></p>
+                                        <p class="hide hiddentable-amount-1"><%=userList[7].recentTransfers[0].amount%></p>
+                                        <p class="hide hiddentable-amount-2"><%=userList[7].recentTransfers[1].amount%></p>
+                                        <p class="hide hiddentable-amount-3"><%=userList[7].recentTransfers[2].amount%></p>
+                                        <p class="hide hiddentable-amount-4"><%=userList[7].recentTransfers[3].amount%></p>
+                                        <p class="hide hiddentable-amount-5"><%=userList[7].recentTransfers[4].amount%></p>
+                                    </li>
+                                    <li class="person-9 person">
+                                        <img class="person-img" src="Images/henrycavil.jpg" alt="human face"> 
+                                        <p class="name"><%=userList[8].name %></p> 
+                                        <p class="amount"><%=userList[8].balance %></p>
+                                        <p class="email"><%=userList[8].email %></p>
+                                        <p class="acid"><%=userList[8].acid %></p>
+                                        <p class="hide hiddentable-sender-1"><%=userList[8].recentTransfers[0].sender%></p>
+                                        <p class="hide hiddentable-sender-2"><%=userList[8].recentTransfers[1].sender%></p>
+                                        <p class="hide hiddentable-sender-3"><%=userList[8].recentTransfers[2].sender%></p>
+                                        <p class="hide hiddentable-sender-4"><%=userList[8].recentTransfers[3].sender%></p>
+                                        <p class="hide hiddentable-sender-5"><%=userList[8].recentTransfers[4].sender%></p>
+                                        <p class="hide hiddentable-receiver-1"><%=userList[8].recentTransfers[0].receiver%></p>
+                                        <p class="hide hiddentable-receiver-2"><%=userList[8].recentTransfers[1].receiver%></p>
+                                        <p class="hide hiddentable-receiver-3"><%=userList[8].recentTransfers[2].receiver%></p>
+                                        <p class="hide hiddentable-receiver-4"><%=userList[8].recentTransfers[3].receiver%></p>
+                                        <p class="hide hiddentable-receiver-5"><%=userList[8].recentTransfers[4].receiver%></p>
+                                        <p class="hide hiddentable-amount-1"><%=userList[8].recentTransfers[0].amount%></p>
+                                        <p class="hide hiddentable-amount-2"><%=userList[8].recentTransfers[1].amount%></p>
+                                        <p class="hide hiddentable-amount-3"><%=userList[8].recentTransfers[2].amount%></p>
+                                        <p class="hide hiddentable-amount-4"><%=userList[8].recentTransfers[3].amount%></p>
+                                        <p class="hide hiddentable-amount-5"><%=userList[8].recentTransfers[4].amount%></p>
+                                    </li>
+                                    <li class="person-10 person">
+                                        <img class="person-img" src="Images/thomas.jpg" alt="human face"> 
+                                        <p class="name"><%=userList[9].name %></p> 
+                                        <p class="amount"><%=userList[9].balance %></p>
+                                        <p class="email"><%=userList[9].email %></p>
+                                        <p class="acid"><%=userList[9].acid %></p>
+                                        <p class="hide hiddentable-sender-1"><%=userList[9].recentTransfers[0].sender%></p>
+                                        <p class="hide hiddentable-sender-2"><%=userList[9].recentTransfers[1].sender%></p>
+                                        <p class="hide hiddentable-sender-3"><%=userList[9].recentTransfers[2].sender%></p>
+                                        <p class="hide hiddentable-sender-4"><%=userList[9].recentTransfers[3].sender%></p>
+                                        <p class="hide hiddentable-sender-5"><%=userList[9].recentTransfers[4].sender%></p>
+                                        <p class="hide hiddentable-receiver-1"><%=userList[9].recentTransfers[0].receiver%></p>
+                                        <p class="hide hiddentable-receiver-2"><%=userList[9].recentTransfers[1].receiver%></p>
+                                        <p class="hide hiddentable-receiver-3"><%=userList[9].recentTransfers[2].receiver%></p>
+                                        <p class="hide hiddentable-receiver-4"><%=userList[9].recentTransfers[3].receiver%></p>
+                                        <p class="hide hiddentable-receiver-5"><%=userList[9].recentTransfers[4].receiver%></p>
+                                        <p class="hide hiddentable-amount-1"><%=userList[9].recentTransfers[0].amount%></p>
+                                        <p class="hide hiddentable-amount-2"><%=userList[9].recentTransfers[1].amount%></p>
+                                        <p class="hide hiddentable-amount-3"><%=userList[9].recentTransfers[2].amount%></p>
+                                        <p class="hide hiddentable-amount-4"><%=userList[9].recentTransfers[3].amount%></p>
+                                        <p class="hide hiddentable-amount-5"><%=userList[9].recentTransfers[4].amount%></p>
+                                    </li>
+                                    </ul>
+            </div>
+            <div class="person-detail-big-box">
+                <div class="person-detail-box">
+                    <img class="person-detail-img" src="Images/billnye.jpg" alt="human face"> 
+                    <div class="person-detail-text-box">
+                        <p class="detailed-name person-detail">Account Holder: Bill Nye</p>
+                        <p class="detailed-accountNo person-detail">Account No.: 1118052204</p>
+                        <p class="detailed-amount person-detail">Balance: <%=userList[3].balance %></p>
+                        <p class="detailed-email person-detail">Email-Id: <%=userList[3].email %></p>
+                    </div>
+                </div>
+                <div class="transfers-box">
+                     <table class="transfers-table">
+                         <tr>
+                             <th>Sent to</th>
+                             <th>Received from</th>
+                             <th>Amount</th>
+                         </tr>
+                         
+                         <tr>
+                            <td class="wSender1TBA"><%=userList[3].recentTransfers[0].sender%></td>
+                            <td class="wReceiver1TBA"><%=userList[3].recentTransfers[0].receiver%></td>
+                            <td class="wAmount1TBA"><%=userList[3].recentTransfers[0].amount%></td>
+                            </tr>
+                            <tr>
+                            <td class="wSender2TBA"><%=userList[3].recentTransfers[1].sender%></td>
+                            <td class="wReceiver2TBA"><%=userList[3].recentTransfers[1].receiver%></td>
+                            <td class="wAmount2TBA"><%=userList[3].recentTransfers[1].amount%></td>
+                            </tr>
+                            <tr>
+                            <td class="wSender3TBA"><%=userList[3].recentTransfers[2].sender%></td>
+                            <td class="wReceiver3TBA"><%=userList[3].recentTransfers[2].receiver%></td>
+                            <td class="wAmount3TBA"><%=userList[3].recentTransfers[2].amount%></td>
+                            </tr>
+                            <tr>
+                            <td class="wSender4TBA"><%=userList[3].recentTransfers[3].sender%></td>
+                            <td class="wReceiver4TBA"><%=userList[3].recentTransfers[3].receiver%></td>
+                            <td class="wAmount4TBA"><%=userList[3].recentTransfers[3].amount%></td>
+                            </tr>
+                            <tr>
+                            <td class="wSender5TBA"><%=userList[3].recentTransfers[4].sender%></td>
+                            <td class="wReceiver5TBA"><%=userList[3].recentTransfers[4].receiver%></td>
+                            <td class="wAmount5TBA"><%=userList[3].recentTransfers[4].amount%></td>
+                            </tr>
+                            
+                         
+                     </table>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-text-box">Created by Ayush Nikhade for TSF-Intern as Task #1</div>
+
+        </footer>
+    </div>
+
+    <script src="../index.js"></script>
+</body>
+</html>

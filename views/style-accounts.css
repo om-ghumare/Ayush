@@ -1,0 +1,317 @@
+/* colours **************************************************************************************/
+/* shades and tints :#e6edf3   #084884  #021628 */
+/* grays: #333 */
+
+/* fonts **************************************************************************************/
+/* MainHeader:3.6rem */
+
+/* spacing **************************************************************************************/
+/* MainHeader:3.6rem */
+
+/* TBR */
+/* 
+C:\Program Files\MongoDB\Server\5.0\data\
+    more button working
+*/
+
+
+/* @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  HOME  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+.top-margin-30px{
+    margin-top: 3rem;
+}
+.top-margin-50px{
+    margin-top: 5rem;
+}
+a{
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    height: 100%;
+    width: 100%;
+    
+}
+body {
+    background-color:#e6edf3 ;
+    height: 100%;
+    width: 100%;
+}
+.main-logo{
+    height: 6.5rem;
+    width: 6.5rem;
+    color: #084884;
+}
+
+
+
+.biggest-container{
+    /* display: grid; */
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* NAVBAR**********************************************/
+
+.navbar{
+    padding: 1.2rem, 5.6rem;
+    display: flex;
+    background-color: #cedae6;
+}
+
+.logo-icon{
+    height: 5.4rem;
+    width: 5.4rem;
+    margin: auto auto;
+
+}
+.main-logo{
+    margin: 1.2rem 0.8rem 1.2rem 8.4rem;
+}
+.main-header{
+    margin: auto 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.6rem;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+}
+
+.navbar ul{
+    display: flex;
+    margin:auto 8.4rem auto auto;
+    gap: 3.6rem;
+}
+.more-icon{
+    display: none;
+    height: 3.6rem;
+    width: 3.6rem;
+}
+
+@media only screen and (max-width: 850px){
+    .navbar ul li a{
+        display: none;
+    }
+    .more-icon{
+        display: inline-block;
+    }
+    .overlay-open{
+        position: absolute;
+        top:0px;
+        left: 0;
+        background-color: #cedae6ea;
+        height: 100%;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: center;
+        align-items: center;
+    
+        
+    }
+    .overlay-open .page-btn{
+        display: block;
+    }
+}
+@media only screen and (max-width: 607px){
+    .main-logo{
+        margin: 1.2rem 2.4rem;
+    }
+}
+@media only screen and (max-width: 375px){
+    .navbar ul{
+        height: 3.6rem;
+        width: 10px;
+        gap: 0px;
+    }
+    .navbar ul:last-child{
+        height: 3.6rem;
+        width: 3.6rem;
+        margin: auto auto;
+    }
+}
+
+
+.navbar ul li{
+    
+    list-style: none;
+    
+}
+
+.page-btn:link,.page-btn:visited{
+    
+    transition: all 0.2s;
+    border: 2px solid #021628;
+    /* border-radius: 1000px; */
+    padding: 0.5rem;
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: #021628;
+
+}
+
+.page-btn:hover,.page-btn:active{
+    
+    border: 2px solid #021628;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #e6edf3;
+    background-color: #021628;
+
+}
+
+
+/* TABLE************************************************************* */
+.table-box{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    grid-template-rows: repeat(1,fr);
+    margin:  3.6rem 7.2rem;
+    box-shadow: 0 0 15px #999;
+    font-size: 1.8rem;
+    
+}
+
+
+.list-box{
+    grid-column: 1/2;
+}
+
+
+.one-bar-container{
+    display: flex;
+    flex-direction: column;
+}
+.person{
+    display: flex;
+    align-items: center;
+
+}
+.person-img{
+    height: 5.4rem;
+    width: 5.4rem;
+    padding: 1rem;
+    border-radius: 1000px;
+}
+.amount{
+    margin-left: auto;
+    margin-right: 2.4rem;
+}
+.selected-person{
+    color: #e6edf3;
+    background-color: #084884;
+}
+
+.person-detail-big-box{
+    grid-column: 2/-1;
+    background-color: #084884;
+    color: #e6edf3;
+    display: flex;
+    flex-direction: column;
+}
+.person-detail-box{
+    display: flex;
+    
+}
+
+.person-detail-text-box{
+    margin: 3.6rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: max(12,auto);
+}
+.person-detail-img{
+    height: 15rem;
+    width: 15rem;
+    padding: 1rem;
+    margin: 2.4rem;
+    border-radius: 10000px;
+}
+
+
+.transfers-table{
+    margin: 2.4rem auto;
+    padding: 1.2rem;
+
+    background-color: #e6edf3;
+    color: #021628;
+}
+table, th, td {
+    border: 1px solid;
+}
+th{
+    background-color: #021628;
+    color: #e6edf3;
+    border-top: none;
+    padding: 0.6rem;
+}
+table{
+    border-collapse: collapse;
+}
+
+.sent{
+    color: #f03e3e;
+}
+.received{
+    color: #37b24d;
+    
+}
+@media only screen and (max-width: 769px){
+    .table-box{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .list-box{
+        grid-row: 2/-1;
+        grid-column: 1/-1;
+    }
+    .person-detail-big-box{
+        grid-column: 1/-1;
+        grid-row: 1/2;
+    }
+}
+
+@media only screen and (max-width: 515px){
+    .person-detail-box{
+        flex-direction: column;
+        
+    }
+    .person-detail-img{
+        margin: 2.4rem auto;
+    }
+    .table-box{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+/* FOOTER ****************************************************************** */
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #021628 ;
+    color: #e6edf3;
+    font-size: 1.2rem;
+    padding: 0.8rem;
+    margin-top: auto;
+}
+
+.email,.acid{
+    display: none;
+}
+.hide{
+    display: none;
+}
